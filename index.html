@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>ToDo app by for Aspekt.mk</h1>
+
+      <div class="cards neumorphism-flat">
+        <h3>Add task</h3>
+        <form>
+          <div class="input-field neumorphism-pressed">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="input-field neumorphism-pressed">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required />
+          </div>
+          <div class="input-field neumorphism-pressed">
+            <label for="status" requierd>Status:</label>
+            <select id="status">
+              <option value="active">Active</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+          <div class="add-task-action">
+            <button id="add-task-button" class="neumorphism-convex">
+              Add Task
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="filter cards neumorphism-flat">
+        <h3>Filter</h3>
+        <div id="filter-form">
+          <div class="input-field neumorphism-pressed">
+            <label for="start-date">Start date:</label>
+            <input type="date" id="start-date" />
+          </div>
+          <div class="input-field neumorphism-pressed">
+            <label for="end-date">End date:</label>
+            <input type="date" id="end-date" />
+          </div>
+          <div class="input-field neumorphism-pressed">
+            <label for="status-filter">Status:</label>
+            <select id="status-filter">
+              <option value="all">All of the below</option>
+              <option value="active">Active</option>
+              <option value="completed">Completed</option>
+            </select>
+          </div>
+        </div>
+        <div class="filter-action">
+          <button id="cancel-filter" class="neumorphism-convex">
+            cancel filter
+          </button>
+          <button id="filter-button" class="neumorphism-convex">Filter</button>
+        </div>
+      </div>
+      <div class="show-tasks cards neumorphism-flat">
+        <h3>Tasks</h3>
+        <div id="sort-by" class="">
+          <button id="sort-by-name">Name</button>
+          <button id="sort-by-date">Date</button>
+          <button id="sort-by-status">Status</button>
+          <div></div>
+        </div>
+        <div id="tasks-to-show"></div>
+      </div>
+      <footer>
+        <p>ToDo app by mario.stojkovski@outlook.com for Aspekt.mk</p>
+      </footer>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

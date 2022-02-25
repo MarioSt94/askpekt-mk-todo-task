@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  background-color: #e7e6eb;
+  color: rgb(70, 70, 70);
+}
+
+body * {
+  color: inherit;
+}
+
+#container {
+  max-width: 950px;
+  margin: auto;
+}
+
+.hide {
+  display: none;
+}
+
+.cards {
+  margin: 4rem 0;
+  padding: 20px 90px;
+  border-radius: 4px;
+}
+
+.neumorphism-flat {
+  border-radius: 13px;
+  background: #e7e6eb;
+  box-shadow: 5px 5px 14px #9b9b9b, -5px -5px 14px #ffffff;
+}
+
+.neumorphism-pressed {
+  border: 0;
+  border-radius: 3px;
+  background: #e7e6eb;
+  box-shadow: inset 4px 4px 6px #c0bfc3, inset -4px -4px 6px #ffffff;
+}
+
+.neumorphism-convex {
+  border: 0;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #f7f6fb, #d0cfd4);
+  box-shadow: 5px 5px 9px #b9b8bc, -5px -5px 9px #ffffff;
+}
+
+form,
+#filter-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.input-field,
+.add-task-action,
+.filter-action {
+  padding: 0.5em;
+  min-height: 2em;
+  max-height: 3em;
+}
+.add-task-action {
+  padding: 0;
+}
+
+.input-field input,
+.input-field select,
+.add-task-action button,
+.filter-action button {
+  min-height: 2.2em;
+  border: 0;
+  background-color: transparent;
+}
+
+.filter-action {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.filter-action button {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.add-task-action button {
+  padding: 1em;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.task,
+#sort-by {
+  margin: 1em 0;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+}
+
+#sort-by {
+  margin: 0;
+  padding: 0;
+}
+
+#sort-by button {
+  margin: 0;
+  padding: 1em 0em;
+  border: 0;
+  background-color: transparent;
+  /* margin-left: 1rem; */
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task .solved {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task-actions button {
+  padding: 0.5em 0.7em;
+}
+
+.edit-field {
+  margin: 0.5em;
+  height: 3em;
+}
+
+footer p {
+  font-size: 0.7em;
+  width: 100%;
+  text-align: center;
+}
