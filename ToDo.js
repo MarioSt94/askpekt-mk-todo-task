@@ -4,43 +4,7 @@ export default class ToDo {
       {
         date: "2017-02-10",
         key: 0.02009691232929452693,
-        name: "Bario Stojkovski",
-        status: "completed",
-      },
-      {
-        date: "2017-01-11",
-        key: 0.020096932123192945262323,
-        name: "Aario Stojkovski",
-        status: "active",
-      },
-      {
-        date: "2011-01-11",
-        key: 0.0120969329211945262323,
-        name: "Aaaaa Stojkovski",
-        status: "active",
-      },
-      {
-        date: "2014-01-11",
-        key: 0.01209693292942315262323,
-        name: "Aaaaa Stojkovski",
-        status: "completed",
-      },
-      {
-        date: "2012-01-11",
-        key: 0.0120969329321312945262323,
-        name: "Aaaaa Stojkovski",
-        status: "active",
-      },
-      {
-        date: "2013-01-11",
-        key: 0.012096932912312945262323,
-        name: "Aaaaa Stojkovski",
-        status: "completed",
-      },
-      {
-        date: "2010-01-11",
-        key: 0.01209693292131232945262323,
-        name: "Aaaaa Stojkovski",
+        name: "dummy task",
         status: "completed",
       },
     ];
